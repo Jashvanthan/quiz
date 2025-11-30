@@ -1,0 +1,147 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz Page</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav>
+            <button onclick="startCountdown()">quiz</button>
+            <button onclick="shows()">result</button>
+        </nav>
+      <section id="section1">
+        <div class="consditions">
+        <p>general Questions</p>
+        <div>
+        <h3>consditions:</h3>
+          
+        <ul>
+            <li>you have 2 minutes to complete the quiz</li>
+            <li>each question carries 5 mark</li>
+            <li>two negative marks for wrong answers</li>
+            <li>make sure to answer all questions before submitting</li>
+        </ul>
+        </div>
+        </div>
+        <div class="time">
+       <h2>test dursion</h2>
+       <p id="timer">02:00</p>
+       <button onclick="startCountdown()">Start</button>
+        </div>
+      </section>
+       <section id="section2">
+        <header>
+            <h1>Welcome to the Quiz Page</h1>
+        </header>
+        <section id="quiz">
+      <div class="div">
+        <h2>1.How many districk in tamilNadu?</h2>
+      <div class="option">
+       <label><input type="radio" id="answer" name="q1" value="29">29</label>
+       <label><input type="radio" id="answer" name="q1" value="38">38</label>
+       <label><input type="radio" id="answer" name="q1" value="39">39</label>
+       <label><input type="radio" id="answer" name="q1" value="48">48</label>
+      </div>
+       </div>
+       <div class="div">
+       <h2>2.what is capital of tamilNadu?</h2>
+       <div class="option">
+       <label><input type="radio" id="age" name="q2" value="chennai">chennai</label>
+       <label><input type="radio" id="age" name="q2" value="maduri">maduri</label>
+       <label><input type="radio" id="age" name="q2" value="thanjavur">Thanjavur</label>
+       <label><input type="radio" id="age" name="q2" value="coimbatore">coimbatore</label>
+       </div>
+       </div>
+       <div class="div">
+       <h2>3.How many state in india?</h2>
+       <div class="option">
+       <label><input type="radio" id="life"  name="q3" value="37">37</label>  
+        <label><input type="radio" id="life" name="q3" value="28">28</label>
+        <label><input type="radio" id="life" name="q3" value="30">30</label>  
+        <label><input type="radio" id="life" name="q3" value="31">31</label>
+        </div>
+        </div>
+         <div class="div">
+       <h2>4.What is capital of india?</h2>
+       <div class="option">
+       <label><input type="radio" id="life"  name="q4" value="Mumbai">mumbai</label>  
+        <label><input type="radio" id="life" name="q4" value="tamilNadu">tamilNadu</label>
+        <label><input type="radio" id="life" name="q4" value="dehli">dehli</label>  
+        <label><input type="radio" id="life" name="q4" value="jaipur">jaipur</label>
+        </div>
+        </div>
+        <div class="div">
+        <h2>5.who is prime minister of india?</h2>
+        <div class="option">
+      <label><input type="radio" id="new"  name="q5" value="Narendra modi">Narendra modi</label>
+       <label><input type="radio" id="new" name="q5" value="no">rahul</label>
+       <label><input type="radio" id="new" name="q5" value="no">yogi</label>
+       <label><input type="radio" id="new" name="q5" value="no">mamta</label>
+       </div>
+        </div>
+        <div class="div">
+       <h2>6.What is a full form of Html?</h2>
+       <div class="option">
+         <label><input type="radio" id="html"name="q6" value="high text markup language">high text markup language</label>
+        <label><input type="radio" id="html" name="q6" value="hyper text markup language">hyper text markup language</label>
+        <label><input type="radio" id="html" name="q6" value="hyper tool markup language">hyper tool markup language</label>
+        <label><input type="radio" id="html" name="q6" value="hyper text makeup language">hyper text makeup language</label>
+       </div>
+       </div>
+       <div class="div">
+         <h2>7.What is a full form of CSS?</h2>
+         <div class="option">
+         <label><input type="radio" id="css" name="q7" value="cascading style sheet">cascading style sheet</label>
+         <label><input type="radio" id="css" name="q7" value="cascading style sheep">cascading style sheep</label>
+         <label><input type="radio" id="css" name="q7" value="cartoon style sheet">cartoon style sheet</label>
+         <label><input type="radio" id="css" name="q7" value="cascading super sheet">cascading super sheet</label>
+         </div>
+       </div>
+       <div class="div">
+         <h2>8.What is a full form of CPU?</h2>
+         <div id="option">
+         <label><input type="radio" id="cpu" name="q8" value="central processing unit">central processing unit</label>
+         <label><input type="radio" id="cpu" name="q8" value="central process unit">central process unit</label>
+         <label><input type="radio" id="cpu" name="q8" value="control processing unit">control processing unit</label>
+         <label><input type="radio" id="cpu" name="q8" value="central performance unit">central performance unit</label>
+        </div>
+         </div>
+         <div class="div">
+            <h2>9.What is a full form of RAM?</h2>
+          <div id="option">
+            <label><input type="radio" id="ram" name="q9" value="run access memory">run access memory</label>
+            <label><input type="radio" id="ram" name="q9" value="random apply memory">random apply memory</label>
+            <label><input type="radio" id="ram" name="q9" value ="read access memory">read access memory</label>
+            <label><input type="radio" id="ram" name="q9" value="random access memory">random access memory</label>
+          </div>
+         </div>
+          <div class="div">
+            <h2>10.What is a full form of URL?</h2>
+          <div class="option">
+            <label><input type="radio" id="url" name="q10" value="unite resource locator">unite resource locator</label>
+            <label><input type="radio" id="url" name="q10"  value="uniform resource letter">uniform resource letter</label>
+            <label><input type="radio" id="url" name="q10" value="uniform resource locator">uniform resource locator</label>
+            <label><input type="radio" id="url" name="q10" value="unite resource letter">unite resource letter</label>
+          </div>
+          </div>
+            <button id="class" onclick="show()">Submit Quiz</button>
+        </section>
+        </section>
+        <section id="result">
+            <div class="score">
+                <h2>Your Quiz Results</h2>
+                <p id="score">score:0/50</p>
+            </div>
+            <div>
+              <h3 id="answered">Answered:0</h3>
+              <h3 id="notanswer">not Answered:10</h3>
+              <h3 id="wronganswer">wrong Answer:0</h3>
+              <h3 id="negativemark">negative Mark:0</h3>
+            </div>
+        </section>
+        <script src="script.js"></script>
+    </body>
+    
+</html>
